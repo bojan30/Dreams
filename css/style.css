@@ -1,0 +1,148 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/*reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input, button{
+  outline: none;
+  border: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+/*global*/
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+}
+
+h1{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.4;
+}
+h4{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #888888;
+}
+h3{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+p{
+  font-size: 0.8rem;
+  color: #888888;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/*home*/
+
+#home{
+  min-height: 100vh;
+  background: url('../images/home-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+nav .logo{
+  font-family: "Bello Script";
+  font-size: 2rem;
+}
+nav .logo a{
+  color: #fff;
+}
+nav .menu{
+  display: flex;
+  color: #fff;
+}
+nav .menu li a{
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+}
+nav .menu li a:hover{
+  color: #ee2f1b;
+}
+.btn-toggle{
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  transition: transform 0.1s ease-out;
+}
+.btn-toggle.open{
+  transform: rotate(135deg);
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: calc(100vh - 4rem);
+  width: 50%;
+  margin: auto;
+}
+.underline{
+  height: 0.1rem;
+  width: 4rem;
+  background-color: #36b9eb;
+  margin-bottom: 2rem;
+}
+.menu-toggle{
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.1s ease-out;
+}
+.menu-toggle.active{
+  height: 212.2px;
+}
+.menu-toggle a{
+  padding: 0.6rem;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+}
+.menu-toggle a:hover{
+  color: #ee2f1b;
+}
+
+@media(max-width: 768px){
+  .btn-toggle{
+    display: inline-block;
+  }
+  nav .menu{
+    display: none;
+  }
+}
