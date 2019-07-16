@@ -40,10 +40,12 @@ h4{
   margin-bottom: 1rem;
   text-transform: uppercase;
   color: #888888;
+  font-weight: bold;
 }
 h3{
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 p{
   font-size: 0.8rem;
@@ -118,6 +120,7 @@ nav .menu li a:hover{
   width: 4rem;
   background-color: #36b9eb;
   margin-bottom: 2rem;
+  display: inline-block;
 }
 .menu-toggle{
   text-align: center;
@@ -137,6 +140,74 @@ nav .menu li a:hover{
 .menu-toggle a:hover{
   color: #ee2f1b;
 }
+/*services*/
+
+.core-services{
+  padding: 3rem 0;
+  text-align: center;
+}
+.services{
+  display: flex;
+  justify-content: space-between;
+}
+.service-box{
+  width: 30%;
+}
+.service-box-icon{
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.service-box-icon img{
+  height: 3rem;
+  display: inline-block;
+}
+
+/*other expretise*/
+
+.other-expertise{
+  background-color: #f7f7f7;
+  display: flex;
+  padding-left: 5%;
+}
+.other-expertise-left{
+  flex: 2;
+  padding: 3rem 1rem 3rem 0;
+}
+.other-expertise-right{
+  flex: 1;
+  background: url('../images/other-expertise-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.expertise-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.expertise{
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+}
+.expertise h4{
+  margin-bottom: 0.4rem;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.row:last-child{
+  margin-bottom: 0;
+}
+.expertise-icon{
+  width: 4rem;
+  margin-right: 0.8rem;
+}
+.expertise-icon img{
+  width: 100%;
+}
 
 @media(max-width: 768px){
   .btn-toggle{
@@ -144,5 +215,17 @@ nav .menu li a:hover{
   }
   nav .menu{
     display: none;
+  }
+}
+@media(max-width: 576px){
+  .services{
+    flex-direction: column;
+  }
+  .service-box{
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .service-box:last-child{
+    margin-bottom: 0;
   }
 }
