@@ -220,6 +220,52 @@ nav .menu li a:hover{
   width: 100%;
 }
 
+/*portfolio*/
+
+.amazing-portfolio{
+  display: flex;
+  padding: 3rem 0 3rem 5%;
+}
+.amazing-portfolio-left{
+  flex: 1;
+  /* padding: 3rem 1rem 3rem 0; */
+}
+.amazing-portfolio-left h4{
+  margin-bottom: 0.6rem;
+}
+.portfolio-services{
+  margin-top: 2rem;
+}
+.portfolio-service{
+  margin-bottom: 1rem;
+}
+.amazing-portfolio-right{
+  flex: 1;
+  /* background: url('../images/portfolio-background2.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  position: relative;
+}
+.amazing-portfolio-right img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.work-items{
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-item {
+  width: 33.33333333%;
+  cursor: pointer;
+}
+.work-item img{
+  width: 100%;
+  display: block;
+}
 @media(max-width: 768px){
   .btn-toggle{
     display: inline-block;
