@@ -1,18 +1,20 @@
 //toggle menu
 
-const toggleBtn = document.querySelector(".btn-toggle");
+const hamburger = document.querySelector(".hamburger");
 const menu = document.querySelector(".menu-toggle");
 
-toggleBtn.addEventListener("click", toggleMenu);
+hamburger.addEventListener("click", toggleMenu);
 
 function toggleMenu(){
   //check if toggle menu is active
   if(menu.classList.contains("active")){
     menu.classList.remove("active");
-    this.classList.remove("open");
+    this.classList.remove("active");
+    this.classList.add("inactive");
   }
   else{
     menu.classList.add("active");
-    this.classList.add("open");
+    this.classList.add("active");
+    this.classList.remove("inactive")
   }
 }
