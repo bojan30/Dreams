@@ -18,3 +18,18 @@ function toggleMenu(){
     this.classList.remove("inactive")
   }
 }
+
+//slide in animation effects
+
+window.addEventListener("scroll",()=>{
+  new Magic("text-one", 80, "fade-in", true).animate();
+  new Magic("text-two", 80, "fade-in", true).animate();
+  new Magic("text-three", 80, "fade-in", true).animate();
+  new Magic("text-four", 80, "fade-in", true).animate();
+  new Magic("service-one", 50, "fade-in", true).animate();
+  new Magic("service-two", 50, "fade-in", true).animate();
+  new Magic("service-three", 50, "fade-in", true).animate();
+  new Magic("team-member-one", 50, "fade-in", true).animate();
+  new Magic("team-member-two", 50, "fade-in", true).animate();
+  new Magic("team-member-three", 50, "fade-in", true).animate();
+})

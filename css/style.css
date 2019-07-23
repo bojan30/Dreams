@@ -243,8 +243,12 @@ nav .menu li a:hover{
   display: flex;
   justify-content: space-between;
 }
+
 .service-box{
   width: 30%;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.2s ease-in-out;
 }
 .service-box-icon{
   margin-bottom: 1rem;
@@ -387,6 +391,11 @@ nav .menu li a:hover{
   text-align: right;
   padding-right: 2rem;
 }
+.about-item-text{
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
 .about-item:nth-child(even) .about-item-text{
   grid-column: 3/4;
   text-align: left;
@@ -426,7 +435,11 @@ nav .menu li a:hover{
 }
 .team-member{
   flex: 1;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.2s ease-in-out;
 }
+
 .team-member .team-member-image{
   width: 50%;
   display: inline-block;
@@ -528,6 +541,11 @@ footer p {
   color: #fff;
 }
 
+/*animation classes*/
+.fade-in{
+  opacity: 1;
+  transform: translateY(0px);
+}
 @media(max-width: 768px){
   .hamburger{
     display: inline-block;
