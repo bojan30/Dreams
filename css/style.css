@@ -328,10 +328,6 @@ nav .menu li a:hover{
 }
 .amazing-portfolio-right{
   flex: 1;
-  /* background: url('../images/portfolio-background2.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; */
   position: relative;
 }
 .amazing-portfolio-right img{
@@ -377,6 +373,9 @@ nav .menu li a:hover{
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   margin-bottom: 4rem;
+}
+.about-item:last-child{
+  margin-bottom: 0;
 }
 .vertical-line{
   position: absolute;
@@ -547,12 +546,22 @@ footer p {
   opacity: 1;
   transform: translateY(0px);
 }
+/*media*/
 @media(max-width: 768px){
   .hamburger{
     display: inline-block;
   }
   nav .menu{
     display: none;
+  }
+  .work-item{
+    width: 50%;
+  }
+  #contact .container{
+    flex-direction: column;
+  }
+  .contact-right{
+    margin-top: 1rem;
   }
 }
 @media(max-width: 576px){
@@ -565,5 +574,48 @@ footer p {
   }
   .service-box:last-child{
     margin-bottom: 0;
+  }
+  .other-expertise{
+    flex-direction: column;
+  }
+  .other-expertise-left{
+    flex: 1;
+  }
+  .other-expertise-right{
+    display: none;
+  }
+  .amazing-portfolio{
+    padding-right: 5%;
+  }
+  .amazing-portfolio-right{
+    display: none;
+  }
+  .work-item{
+    width: 100%;
+  }
+  .about-item{
+  grid-template-columns: 3fr 1fr 3fr;
+  }
+  .about-item:nth-child(odd) .about-item-text{
+    padding-right: 0.6rem;
+  }
+  .about-item:nth-child(even) .about-item-text{
+    padding-left: 0.6rem;
+  }
+  .team-members{
+    flex-direction: column;
+  }
+  .team-member{
+    margin-bottom: 2rem;
+  }
+  .team-member:last-child{
+    margin-bottom: 0;
+  }
+  .contact-left{
+    text-align: center;
+  }
+  .contact-left .contact-items{
+    flex-direction: column;
+    text-align: center;
   }
 }
