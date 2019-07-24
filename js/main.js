@@ -39,7 +39,7 @@ window.addEventListener("scroll",debounce(()=>{
 function parallax(target, amount){
   let scroll = window.pageYOffset;
   let el = document.querySelector(target);
-  el.style.backgroundPositionY = amount * scroll + "px";
+  el.style.backgroundPositionY = (amount-1) * scroll + "px";
 }
 
 window.addEventListener("scroll", ()=>{
