@@ -21,7 +21,7 @@ function toggleMenu(){
 
 //slide in animation effects
 
-window.addEventListener("scroll",()=>{
+window.addEventListener("scroll",debounce(()=>{
   new Magic("text-one", 80, "fade-in", true).animate();
   new Magic("text-two", 80, "fade-in", true).animate();
   new Magic("text-three", 80, "fade-in", true).animate();
@@ -32,4 +32,4 @@ window.addEventListener("scroll",()=>{
   new Magic("team-member-one", 50, "fade-in", true).animate();
   new Magic("team-member-two", 50, "fade-in", true).animate();
   new Magic("team-member-three", 50, "fade-in", true).animate();
-})
+},16,true));
