@@ -33,3 +33,15 @@ window.addEventListener("scroll",debounce(()=>{
   new Magic("team-member-two", 50, "fade-in", true).animate();
   new Magic("team-member-three", 50, "fade-in", true).animate();
 },16,true));
+
+//parallax effect
+
+function parallax(target, amount){
+  let scroll = window.pageYOffset;
+  let el = document.querySelector(target);
+  el.style.backgroundPositionY = amount * scroll + "px";
+}
+
+window.addEventListener("scroll", ()=>{
+  parallax("#home",0.7);
+});
